@@ -4,7 +4,8 @@
  * Burger class, is the component of the abstract Beverage class.
  */
 
-public class Burger extends Food {
+public class Burger extends Food
+{
 
     private double cost;
     public Burger()
@@ -13,13 +14,15 @@ public class Burger extends Food {
     }
 
     @Override
-    public String getFoodName() {
+    public String getFoodName()
+    {
         return super.getFoodName();
     }
 
     @Override
-    public double cost() {
-
+    public double cost()
+    {
+        cost = 10.99;
         // set the cost, any price. idc
         // then return the cost.
         return cost;

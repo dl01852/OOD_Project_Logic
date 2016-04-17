@@ -1,15 +1,9 @@
 /**
- * Created by david-lewis on 3/28/2016.
- *
- * Nick Things to do:
- * Create a Burger object. This will be the burger that's going to be decorated.
- * Have the burger object get passed in from the constructor.
+ * Created by Nicholas on 4/16/2016.
  */
-
-public class Lettuce extends BurgerDecorator
+public class Tomatoes extends BurgerDecorator
 {
-
-    public Lettuce(Burger burgerToOrder)
+    public Tomatoes(Burger burgerToOrder)
     {
         super(burgerToOrder);
     }
@@ -18,7 +12,7 @@ public class Lettuce extends BurgerDecorator
     public String getDescription()
     {
 
-        return "with lettuce";
+        return "with tomato";
         // get the description from the burger object and then add on the description from this class
         // soo for this particular class, the description you'd add is  ' with lettuce'
         // then return that(don't return null).
@@ -32,4 +26,5 @@ public class Lettuce extends BurgerDecorator
         // get the cost from the burger object and then add on the cost for lettuce(if there is a cost) and return that value.
         // (don't return 0)
     }
+}
 }
