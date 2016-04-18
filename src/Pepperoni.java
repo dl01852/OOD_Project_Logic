@@ -1,21 +1,23 @@
 /**
  * Created by Nicholas on 4/16/2016.
  */
-public class Pepperoni extends BurgerDecorator
+public class Pepperoni extends PizzaDecorator
 {
+    Pizza pizza;
+
     public Pepperoni(Pizza pizzaToOrder)
     {
-        super(pizzaToOrder);
+        this.pizza = pizzaToOrder;
     }
     @Override
     public String getDescription()
     {
-        return "with Pepperoni";
+        return pizza.getFoodName() + "with Pepperoni";
     }
 
     @Override
     public double cost()
     {
-        return cost;
+        return pizza.cost() + 0;
     }
 }

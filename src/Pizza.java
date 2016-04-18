@@ -15,9 +15,11 @@ public class Pizza extends Food
     {
         return super.getFoodName();
     }
+
     @Override
     public double cost()
     {
-        return 10.99;
+        cost = 10.99;
+        return cost;
     }
 }

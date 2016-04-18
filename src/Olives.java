@@ -1,21 +1,23 @@
 /**
  * Created by Nicholas on 4/16/2016.
  */
-public class Olives extends BurgerDecorator
+public class Olives extends PizzaDecorator
 {
+    Pizza pizza;
+
     public Olives(Pizza pizzaToOrder)
     {
-        super(pizzaToOrder);
+        this.pizza = pizzaToOrder;
     }
     @Override
     public String getDescription()
     {
-        return "with Olives";
+        return pizza.getFoodName() + "with Olives";
     }
 
     @Override
     public double cost()
     {
-        return cost;
+        return pizza.cost() + 0;
     }
 }

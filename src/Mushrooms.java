@@ -1,21 +1,23 @@
 /**
  * Created by Nicholas on 4/16/2016.
  */
-public class Mushrooms extends BurgerDecorator
+public class Mushrooms extends PizzaDecorator
 {
+    Pizza pizza;
+
     public Mushrooms(Pizza pizzaToOrder)
     {
-        super(pizzaToOrder);
+        this.pizza = pizzaToOrder;
     }
     @Override
     public String getDescription()
     {
-        return "with mushrooms";
+        return pizza.getFoodName() + "with mushrooms";
     }
 
     @Override
     public double cost()
     {
-        return cost;
+        return pizza.cost() + 0;
     }
 }
