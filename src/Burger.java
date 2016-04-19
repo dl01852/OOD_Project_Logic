@@ -1,3 +1,4 @@
+package src;
 /**
  * Created by david-lewis on 3/28/2016.
  *
@@ -13,11 +14,6 @@ public class Burger extends Food
         FoodName = "Burger ";
     }
 
-    @Override
-    public String getFoodName()
-    {
-        return super.getFoodName();
-    }
 
     @Override
     public double cost()

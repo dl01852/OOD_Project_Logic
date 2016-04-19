@@ -1,3 +1,4 @@
+package src;
 /**
  * Created by Nicholas on 4/16/2016.
  */
@@ -11,7 +12,7 @@ public class BaconBits extends PizzaDecorator
     @Override
     public String getDescription()
     {
-        return pizza.getFoodName() + "with bacon bits";
+        return pizza.getDescription() + "with bacon bits";
     }
 
     @Override

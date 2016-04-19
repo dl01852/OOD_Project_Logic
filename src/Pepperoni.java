@@ -1,3 +1,4 @@
+package src;
 /**
  * Created by Nicholas on 4/16/2016.
  */
@@ -12,7 +13,7 @@ public class Pepperoni extends PizzaDecorator
     @Override
     public String getDescription()
     {
-        return pizza.getFoodName() + "with Pepperoni";
+        return pizza.getDescription() + "with Pepperoni";
     }
 
     @Override

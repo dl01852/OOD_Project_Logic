@@ -1,3 +1,4 @@
+package src;
 /**
  * Created by Nicholas on 4/16/2016.
  */
@@ -14,7 +15,7 @@ public class Onions extends BurgerDecorator
     public String getDescription()
     {
 
-        return burger.getFoodName() + "with onions ";
+        return burger.getDescription() + "with onions ";
         // get the description from the burger object and then add on the description from this class
         // soo for this particular class, the description you'd add is  ' with lettuce'
         // then return that(don't return null).

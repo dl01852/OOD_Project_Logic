@@ -1,3 +1,4 @@
+package src;
 /**
  * Created by Nicholas on 4/16/2016.
  */
@@ -12,7 +13,7 @@ public class Sausage extends PizzaDecorator
     @Override
     public String getDescription()
     {
-        return pizza.getFoodName() + "with Sausage";
+        return pizza.getDescription() + "with Sausage";
     }
 
     @Override

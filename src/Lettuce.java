@@ -1,3 +1,4 @@
+package src;
 /**
  * Created by david-lewis on 3/28/2016.
  *
@@ -19,7 +20,7 @@ public class Lettuce extends BurgerDecorator
     public String getDescription()
     {
 
-        return burger.getFoodName() + "with lettuce ";
+        return burger.getDescription() + "with lettuce ";
         // get the description from the burger object and then add on the description from this class
         // soo for this particular class, the description you'd add is  ' with lettuce'
         // then return that(don't return null).

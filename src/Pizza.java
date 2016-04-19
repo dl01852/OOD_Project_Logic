@@ -1,3 +1,4 @@
+package src;
 /**
  * Created by Nicholas on 4/16/2016.
  */
@@ -11,9 +12,9 @@ public class Pizza extends Food
     }
 
     @Override
-    public String getFoodName()
+    public String getDescription()
     {
-        return super.getFoodName();
+        return super.getDescription();
     }
 
     @Override
