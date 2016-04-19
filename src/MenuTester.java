@@ -1,30 +1,16 @@
+package src;
+
 /**
- * Created by Nicholas on 4/18/2016.
+ * Created by david-lewis on 4/19/2016.
  */
-public class MenuTester
-{
-    public static void main(String args[])
-    {
-        Food burger = new Burger();
-        BurgerDecorator condiments = new Cheese(new Bacon(new Lettuce(new Tomatoes(new Onions(burger)))));
+public class MenuTester {
 
-        Cheese cheese = new Cheese(burger);
-        Lettuce lettuce = new Lettuce(burger);
-        Tomatoes tomatoes = new Tomatoes(burger);
-        Onions onions = new Onions(burger);
-        Bacon bacon = new Bacon(burger);
+   public static void main(String[] args)
+   {
 
-        System.out.println(condiments.getDescription());
-        System.out.println(condiments.cost());
-        //System.out.println(burger.getFoodName());
-        //System.out.println(burger.cost());
-        //System.out.println(cheese.getDescription() + cheese.cost() + "\n" +bacon.getDescription() + bacon.cost() + "\n" + lettuce.getDescription() + lettuce.cost()+ "\n" + tomatoes.getDescription() + tomatoes.cost());
-        //double burgerWithEverything = burger.cost() + .75 + .25;
-        //System.out.println(burger.getFoodName() + "with everything = " + burgerWithEverything);
-        //System.out.println(lettuce);
-        //System.out.println(tomatoes);
-        //System.out.println(onions);
-        //System.out.println(bacon);
+       Food burger = new Burger();
+       burger = new Cheese(new Bacon(burger));
+       System.out.println(String.format("%s: %.2f",burger.getDescription(),burger.cost()));
 
-    }
+   }
 }
