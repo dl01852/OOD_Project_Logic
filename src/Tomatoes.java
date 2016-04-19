@@ -1,17 +1,12 @@
 package src;
 /**
- * Created by david-lewis on 3/28/2016.
- *
- * Nick Things to do:
- * Create a Burger object. This will be the burger that's going to be decorated.
- * Have the burger object get passed in from the constructor.
+ * Created by Nicholas on 4/16/2016.
  */
-
-public class Lettuce extends BurgerDecorator
+public class Tomatoes extends BurgerDecorator
 {
     Food burger;
 
-    public Lettuce(Food burgerToOrder)
+    public Tomatoes(Food burgerToOrder)
     {
         this.burger = burgerToOrder;
     }
@@ -20,7 +15,7 @@ public class Lettuce extends BurgerDecorator
     public String getDescription()
     {
 
-        return burger.getDescription() + "with lettuce ";
+        return burger.getDescription() + "with tomato ";
         // get the description from the burger object and then add on the description from this class
         // soo for this particular class, the description you'd add is  ' with lettuce'
         // then return that(don't return null).
