@@ -3,9 +3,9 @@
  */
 public class Bacon extends BurgerDecorator
 {
-    Burger burger;
+    Food burger;
 
-    public Bacon(Burger burgerToOrder)
+    public Bacon(Food burgerToOrder)
     {
         this.burger = burgerToOrder;
     }
@@ -14,7 +14,7 @@ public class Bacon extends BurgerDecorator
     public String getDescription()
     {
 
-        return burger.getFoodName() + "with bacon";
+        return burger.getFoodName() + "with bacon ";
         // get the description from the burger object and then add on the description from this class
         // soo for this particular class, the description you'd add is  ' with lettuce'
         // then return that(don't return null).
@@ -23,7 +23,7 @@ public class Bacon extends BurgerDecorator
     @Override
     public double cost()
     {
-
+        //return .75;
         return burger.cost() + .75;
         // get the cost from the burger object and then add on the cost for lettuce(if there is a cost) and return that value.
         // (don't return 0)

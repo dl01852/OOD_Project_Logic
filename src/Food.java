@@ -4,7 +4,7 @@
  */
 public abstract class Food
 {
-   protected String FoodName = "Generic Food";
+   protected String FoodName = "Generic Food ";
 
     public String getFoodName()
     {

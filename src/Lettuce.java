@@ -8,9 +8,9 @@
 
 public class Lettuce extends BurgerDecorator
 {
-    Burger burger;
+    Food burger;
 
-    public Lettuce(Burger burgerToOrder)
+    public Lettuce(Food burgerToOrder)
     {
         this.burger = burgerToOrder;
     }
@@ -19,7 +19,7 @@ public class Lettuce extends BurgerDecorator
     public String getDescription()
     {
 
-        return burger.getFoodName() + "with lettuce";
+        return burger.getFoodName() + "with lettuce ";
         // get the description from the burger object and then add on the description from this class
         // soo for this particular class, the description you'd add is  ' with lettuce'
         // then return that(don't return null).
