@@ -23,4 +23,11 @@ public class Pizza extends Food
         cost = 10.99;
         return cost;
     }
+
+    @Override
+    public void order() {
+        //print order message
+        System.out.println("Preparing pizza...");
+        //... or whatever action after order submitted
+    }
 }

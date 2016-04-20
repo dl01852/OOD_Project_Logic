@@ -21,4 +21,9 @@ public class Mushrooms extends PizzaDecorator
     {
         return pizza.cost() + 0;
     }
+
+    @Override
+    public void order() {
+        System.out.println("Added Mushrooms...");
+    }
 }

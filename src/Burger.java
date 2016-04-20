@@ -23,4 +23,11 @@ public class Burger extends Food
         // then return the cost.
         return cost;
     }
+
+    @Override
+    public void order() {
+        //print order message
+        System.out.println("Preparing burger...");
+        //... or whatever action after order submitted
+    }
 }

@@ -20,4 +20,9 @@ public class BaconBits extends PizzaDecorator
     {
         return pizza.cost() + .50;
     }
+
+    @Override
+    public void order() {
+        System.out.println("Added Bacon Bits...");
+    }
 }

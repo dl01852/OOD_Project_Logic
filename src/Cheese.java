@@ -29,4 +29,9 @@ public class Cheese extends BurgerDecorator
         // get the cost from the burger object and then add on the cost for lettuce(if there is a cost) and return that value.
         // (don't return 0)
     }
+
+    @Override
+    public void order() {
+        System.out.println("Added Cheese...");
+    }
 }
