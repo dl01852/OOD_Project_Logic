@@ -4,9 +4,9 @@ package src;
  */
 public class Pepperoni extends PizzaDecorator
 {
-    Pizza pizza;
+    Food pizza;
 
-    public Pepperoni(Pizza pizzaToOrder)
+    public Pepperoni(Food pizzaToOrder)
     {
         this.pizza = pizzaToOrder;
     }

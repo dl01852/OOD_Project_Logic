@@ -3,9 +3,12 @@ package src;
 /**
  * Created by jlarkin9 on 4/20/16.
  */
+
+// Kitchen holds all food items and is able to call prepare messages for each
+
 public class Kitchen {
-    private Burger burger;
-    private Pizza pizza;
+    private Food burger;
+    private Food pizza;
     private Food bacon;
     private Food baconBits;
     private Food cheese;
@@ -34,41 +37,11 @@ public class Kitchen {
         tomatoes = new Tomatoes(burger);
     }
 
-    public void prepareBurger() {
-        burger.order();
+    public void prepareFood(Food food) {
+        food.order();
     }
 
-    public void preparePizza() {pizza.order();}
-    public void prepareBacon() {
-        bacon.order();
-    }
-    public void prepareBaconBits() {
-        baconBits.order();
-    }
-    public void prepareCheese() {
-        cheese.order();
-    }
-    public void prepareLettuce() {
-        lettuce.order();
-    }
-    public void prepareMushrooms() {
-        mushrooms.order();
-    }
-    public void prepareOlives() {
-        olives.order();
-    }
-    public void prepareOnions() {
-        olives.order();
-    }
-    public void preparePepperoni() {
-        pepperoni.order();
-    }
-    public void prepareSausage() {
-        sausage.order();
-    }
-    public void prepareTomatoes() {
-        tomatoes.order();
-    }
+
 
 
 

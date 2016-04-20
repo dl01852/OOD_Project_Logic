@@ -4,11 +4,13 @@ package src;
  */
 public class Sausage extends PizzaDecorator
 {
-    Pizza pizza;
+    Food pizza;
 
-    public Sausage(Pizza pizzaToOrder)
+
+    public Sausage(Food pizzaToOrder)
     {
         this.pizza = pizzaToOrder;
+       // pizza = new Pizza();
     }
     @Override
     public String getDescription()

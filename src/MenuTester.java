@@ -10,11 +10,17 @@ public class MenuTester {
 
        Kitchen kitchen = new Kitchen();
        Food burger = new Burger();
-       burger = new Cheese(new Bacon(burger));
+       kitchen.prepareFood(burger);
+
+       burger = new Bacon(burger);
+       kitchen.prepareFood(burger);
+
+       burger = new Cheese(burger);
+       kitchen.prepareFood(burger);
        System.out.println(String.format("%s: %.2f",burger.getDescription(),burger.cost()));
-       kitchen.prepareBurger();
-       kitchen.prepareCheese();
-       kitchen.prepareBacon();
+
+
+
 
    }
 }

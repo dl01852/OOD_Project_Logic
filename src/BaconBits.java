@@ -4,8 +4,8 @@ package src;
  */
 public class BaconBits extends PizzaDecorator
 {
-    Pizza pizza;
-    public BaconBits(Pizza pizzaToOrder)
+    Food pizza;
+    public BaconBits(Food pizzaToOrder)
     {
         this.pizza = pizzaToOrder;
     }
