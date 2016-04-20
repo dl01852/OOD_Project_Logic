@@ -4,16 +4,16 @@ package src;
  */
 public class Sausage extends PizzaDecorator
 {
-    Pizza pizza;
+    Food pizza;
 
-    public Sausage(Pizza pizzaToOrder)
+    public Sausage(Food pizzaToOrder)
     {
         this.pizza = pizzaToOrder;
     }
     @Override
     public String getDescription()
     {
-        return pizza.getDescription() + "with Sausage";
+        return pizza.getDescription() + "with Sausage ";
     }
 
     @Override
